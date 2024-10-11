@@ -1,0 +1,453 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.outer-container {
+    border: 20px solid white;
+}
+/* navbar */
+.navbar {
+    background-image: url("./Images/strip-bg-05.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 390px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    border-bottom: 20px solid white;
+}
+.navbar-brand {
+    color: white;
+    font-size: 1.6rem;
+    border: 1px solid white;
+    padding: 0.2rem 1rem;
+    font-weight: 400;
+}
+.navbar-nav a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.navbar-nav a:hover {
+    background-color: #654520;
+    color: white;
+}
+.navbar-toggler {
+ color: transparent;
+}
+.navbar-toggler-icon {
+    color: white;
+}
+/* introduction container*/
+.introduction {
+    background-image: url(./Images/strip-bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 200vh;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+/* introduction */
+.introduction>.container {
+    background-color: white;
+    border-radius: 0 500px 500px 0;
+    padding: 10px 60px 50px 30px;
+    margin-left: 0;
+    margin-right: 20px;
+    min-width: 100%;
+}
+.introduction h2 {
+    color:rgb(0, 89, 154);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+.introduction p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.introduction p>a {
+    text-decoration: none;
+}
+/* our mission */
+.mission {
+    padding: 80px 30px 30px;
+    color: white;
+}
+.mission>h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+/* services container */
+#services {
+    background-image: url(./Images/strip-bg-02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 200vh;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+/* imge in services */
+#services>.image1 >img {
+    padding: 30px 0px; 
+    width: 80%;
+    padding-left: 0px;
+}
+#services>.image1 {
+    text-align: center;
+}
+/* our services */
+#services>.container {
+    background-color: white;
+    border-radius: 500px 0% 0% 500px;
+    padding: 40px 0px 40px 100px;
+    margin-right: 0;
+    margin-top: 30px;   
+    min-width: 100%;
+}
+#services>.container>h2 {
+    color:brown;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+#services>.container>p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+/* about container */
+#about {
+    background-image: url("./Images/strip-bg-03.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 200vh;
+    padding: 30px 20px 20px 0px ;
+    
+}
+/* about */
+#about .container {
+    background-color: white;
+    border-radius: 0 500px 500px 0;
+    padding: 10px 60px 50px 30px;
+    margin-left: 0;
+    min-width: 100%;
+}
+#about .container h2 {
+    color:#373a3c;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+#about .container p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+/* image in about container */
+#about .image2>img {
+    padding: 50px 0px 20px;
+    width: 90%;
+}
+#about .image2 {
+    text-align: center;
+}
+/* contact container */
+#contact {
+    padding: 30px 0px 30px 20px;
+    background-image: url("./Images/strip-bg-04.jpg");
+}
+#contact h2 {
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+/* contact  */
+.contact {
+    display: flex;
+    gap: 10%;
+    justify-content: space-around;
+}
+.contact input ,.contact button{
+    width: 43vw;
+    height: 40px;
+}
+.contact textarea {
+    width: 43vw;
+    height: 200px;
+}
+.contact input,.contact textarea , .contact button{
+    padding:0px 10px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(204, 204, 204, 0.43);
+    color: white;
+    outline: none;
+    opacity: 1;
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+/* contact address */
+#contact .address {
+    background-color: white;
+    border-radius: 500px 0% 0% 500px;
+    padding: 30px 0px 40px 100px;
+    margin-top: 30px;
+}
+#contact .address h2 {
+    color:#2A8885 ;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+#contact .address p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#contact .address a {
+    text-decoration: none;
+}
+#contact .address h3 {
+    color:#2A8885;
+    font-weight: 400;
+    margin-top: 50px;
+}
+#contact .address span {
+    color:#2A8885 ;
+}
+/* footer */
+footer p {
+    padding: 30px;
+    background-color: #cc9900;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* media queries */
+
+@media screen and (max-width:543px) {
+    
+    .introduction>.container {
+        border-radius: 0% 200px 200px 0%;
+    }
+    #services>.container {
+        border-radius: 200px 0% 0% 200px;
+    }
+    #about .container {
+        border-radius: 0% 200px 200px 0%;
+    }
+    #contact .address {
+        border-radius: 200px 0% 0% 200px; 
+    }
+    .contact-container>h2 {
+        margin-left: 10px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact input ,.contact button{
+        width: 80vw;
+        height: 40px;
+    }
+    .contact textarea {
+        width: 80vw;
+        height: 200px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:544px) and (max-width:991px) {
+    .contact input ,.contact button{
+        width: 40vw;
+        height: 40px;
+    }
+    .contact textarea {
+        width: 40vw;
+        height: 200px;
+        margin-top: 90px;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+    }
+    .contact-left>h2 {
+        width: 160%;
+    }
+    #services>.image1 >img {
+        padding: 30px 0px; 
+        width: 450px;
+        padding-left: 0px;
+    }
+    #about .image2>img {
+        padding: 50px 0px 20px;
+        width: 450px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1060px){
+    body {
+        background-image: url("./Images/strip-bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100vw 600vh;
+        padding:0px 50px;
+    }
+    .contact input ,.contact button{
+        width: 80vw;
+        height: 40px;
+    }
+    .contact textarea {
+        width: 80vw;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-container>h2 {
+        margin-left: 15px;
+    }
+    #services>.image1 >img {
+        padding: 30px 0px; 
+        width: 450px;
+        padding-left: 0px;
+    }
+    #about .image2>img {
+        padding: 50px 0px 20px;
+        width: 450px;
+    }
+    
+}
+
+@media screen and (min-width:1061px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image: url("./Images/strip-bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100vw 600vh;
+        padding:0px 70px;
+    }
+    /* flex boxes */
+    .introduction {
+        background-size: 100vw 600px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        margin-left: 0;
+    }
+    .introduction>.container {
+        border-radius: 0 200px 200px 0;
+        padding: 10px 60px 40px 30px;
+        margin-left: 0;
+        min-width: 45%;
+        max-width: 50%; 
+    } 
+    .mission {      
+        padding: 10px 50px 10px 0px;
+        color: white;
+        min-width: 45%;
+        max-width: 50%;
+    } 
+    #services {
+        background-size: 100vw 800px;
+        /* padding-top: 30px; */
+        /* padding-bottom: 30px; */
+        display: flex;
+        align-items: center;
+        gap: 5%;
+    }
+    #services>.image1 {
+        text-align: center;
+        min-width: 50%;
+    }
+    #services>.image1 >img {
+        width: 80%;
+        padding-left: 0px;
+    }
+    #services>.container {
+        border-radius: 200px 0% 0% 200px;
+        padding: 20px 0px 50px 100px;
+        margin-right: 0;
+        margin-top: 30px;   
+        min-width: 45%;
+        max-width: 50%;
+    }
+    #about {
+        background-size: 100vw 800px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        margin-left: 0;
+    }
+    #about .container {
+        background-color: white;
+        border-radius: 0 200px 200px 0;
+        padding: 10px 60px 40px 30px;
+        margin-left: 0;
+        min-width: 45%;
+        max-width: 50%;
+    }
+    #about .image2 {
+        text-align: center;
+        min-width: 50%;
+    }
+    #about .image2>img {
+        width: 80%;
+    }
+    #contact {
+        display: flex;
+        justify-content: space-between;
+        gap: 2%;
+        align-items: center;
+        background-size: 100vw 800px;
+        /* padding-top: 30px; */
+        /* padding-bottom: 30px; */
+        margin-right: 0;
+    }
+    .contact {
+        display: flex;
+        gap: 3%;
+        justify-content: center;
+        min-width: 50%;
+    }
+    #contact .address {
+        background-color: white;
+        border-radius: 200px 0% 0% 200px;
+        padding: 20px 0px 50px 100px;
+        min-width: 45%;
+        max-width: 50%;
+        margin-right: 0;
+    }
+    .contact-left>h2 {
+        width: 160%;
+    }
+    .contact input ,.contact button{
+        width: 100%;
+        height: 40px;
+    }
+    .contact textarea {
+        width: 100%;
+        height: 200px;
+        margin-top: 90px;
+    }
+   
+}
+
+
+
